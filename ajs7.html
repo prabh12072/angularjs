@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AJ -Q7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var mod=angular.module("myapp",[]);
+		mod.controller("controller",function($scope){
+			$scope.dblclickfun=function(){
+				alert("Double Cliked!!");
+			}
+		});
+	</script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="controller">
+	    <p> <b> Make use of NgDbclick event directive on the button to show an alert. </b></p>
+		<button ng-dblclick="dblclickfun()">Click me twice</button> <br> <br>
+	</div>
+
+</body>
+</html>

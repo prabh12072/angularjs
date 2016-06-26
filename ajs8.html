@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AJ -Q8</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var mod=angular.module("myapp",[]);
+		mod.controller("controller",function($scope){
+			$scope.Name="Prabhjot";
+			});
+	</script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="controller">
+		<p> <b> Make use of ng-Bind attribute and show values of scope inside the view.</b> </p>
+		<p> The value of variable Name is : </p>
+		<u> <p ng-bind="Name"></p> </u>
+	</div>
+
+</body>
+</html>

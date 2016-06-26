@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJ-Q4</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var mod=angular.module("myapp",[]);
+		mod.run(function($rootScope){
+			$rootScope.msg=" U r in root ";
+		});
+		mod.controller("controller1",function($scope){
+			$scope.msg=" U r in controller 1";});
+		mod.controller("controller2",function($scope){
+			$scope.msg=" U r in controller 2";});
+				</script>
+</head>
+<body>
+	<div ng-app="myapp">
+		<p> Root Message : <b> {{msg}} </b> </p>
+		<div ng-controller="controller1">
+			<p>controller 1 Message : <b> {{msg}} </b> </p>
+		</div>
+		<div ng-controller="controller2">
+			<p> controller 2 Message : <b> {{msg}} </b> </p>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

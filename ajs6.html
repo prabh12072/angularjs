@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AJ - Q6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var mod=angular.module("myapp",[]);
+		mod.controller("controller",function($scope){
+			$scope.clickfun=function(){
+				alert("Single CLicked!!");
+			}
+		});
+	</script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="controller">
+		<p>  <b> Make Use of NgClick event directive on the button to show an alert. </b> </p>
+		<button ng-click="clickfun()">Click me once</button> <br> <br>
+	</div>
+
+</body>
+</html>

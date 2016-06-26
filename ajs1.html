@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Angular-Q1</title>
+	
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="MyCtr">
+		<form action="#">
+			First Name : <input type="text"  ng-model="person.FirstName"></input><br><br>
+			Last Name : <input type="text"   ng-model="person.LastName"> </input><br><br>
+			<input type="Submit"> </input><br> <br>
+		</form>
+
+		<table border= 1px solid red>
+			<thead>
+				<th> Detail </th>
+				<th> Value </th>
+
+			</thead>
+			<tbody>
+				<tr>
+					<td ng-bind="person.FirstName"> &nbsp </td>
+					<td ng-bind="person.LastName"> &nbsp </td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var det=angular.module("myApp",[]);
+		det.controller("MyCtr",function($scope){
+			$scope.person={
+				FirstName:" " , 
+				LastName: " "
+			};
+		});
+	</script>
+</body>
+</html>

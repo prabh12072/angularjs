@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AJ-Q5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="controller">
+		<table>
+			<tr> 
+				<td> Name : </td><td> <input ng-model="info.Name"> </input> </td>
+			</tr>
+			<tr>
+				<td> EmployeeID : </td><td> <input ng-model="info.EmployeeID"> </input></td>
+			</tr>
+			<tr>
+				<td> Designation : </td><td> <input ng-model="info.Designation"> </input></td>
+			</tr>
+			
+		</table>
+	</div>
+	<script type="text/javascript">
+		var detail=angular.module("myapp",[]);
+		detail.controller("controller",function($scope){
+			$scope.info={ Name: "Prabhjot Singh" , EmployeeID:"2194" , Designation:"Software Design Engineer"};
+		});
+	</script>
+
+</body>
+</html>

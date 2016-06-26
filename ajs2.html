@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AJ - Q2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myappp" ng-controller="mycontroller">
+		<b><h4> First Name: </h4> <h5 ng-bind="details.firstname"> </h5>
+		<b><h4> Last Name: </h4> <h5 ng-bind="details.lastname">  </h5>
+	</div>
+	<script type="text/javascript">
+		var myapp=angular.module("myappp",[]);
+		myapp.controller("mycontroller", function($scope){ 
+			$scope.details={ firstname: " Prabhjot " ,lastname: " Singh " }
+		});
+		
+	</script>
+
+</body>
+</html>
